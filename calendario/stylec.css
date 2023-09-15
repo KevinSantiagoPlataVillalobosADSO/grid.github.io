@@ -1,0 +1,136 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.content{
+    font-family: 'Poppins', sans-serif;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(255, 255, 255);
+    padding: 20px;
+    color: #00000079;
+}
+.contenedor_padre{
+    display: grid;
+    background-color: rgb(255, 255, 255);
+    width: 1600px;
+    height: 800px;
+    grid-template-columns: repeat(7, 1fr);
+    grid-template-rows: 1fr 60px repeat(5, 1fr);
+    border-radius: 10px;
+    box-shadow: 0px 2px 20px rgba(112, 112, 112, 0.267);
+}
+.title{
+    grid-column: 1/8;
+    font-size: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;   
+    border-bottom: 1px solid #00000010; 
+}
+
+.hijo{
+    border-bottom: 1px solid #00000010;
+    border-right: 1px solid #00000010;
+    text-align: left;
+    padding-left: 20px;
+    padding-top: 20px;
+    transition: background-color 1s ease;
+}
+
+.dia{
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 1px solid #00000010;
+}
+
+.hijo:nth-of-type(7n+8){
+    border-right: none;
+}
+
+.hijo:nth-last-of-type(-n+3){
+    border-bottom: none;
+}
+.hijo:hover{
+    color: #000000a9;
+    background-color: rgb(230, 230, 230);
+    cursor: pointer;
+}
+.dia1:hover{
+    background-color: rgb(230, 230, 230);
+}
+
+.dia1:hover ~ .hijo:nth-of-type(7n+2){
+    color: #000000a9;
+    background-color: rgb(230, 230, 230);
+    
+}
+
+.dia2:hover{
+    background-color: rgb(230, 230, 230);
+}
+
+.dia2:hover ~ .hijo:nth-of-type(7n+3){
+    color: #000000a9;
+    background-color: rgb(230, 230, 230);
+    
+}
+
+.dia3:hover{
+    background-color: rgb(230, 230, 230);
+}
+
+.dia3:hover ~ .hijo:nth-of-type(7n+4){
+    color: #000000a9;
+    background-color: rgb(230, 230, 230);
+    
+}
+
+.dia4:hover{
+    background-color: rgb(230, 230, 230);
+}
+
+.dia4:hover ~ .hijo:nth-of-type(7n+5){
+    color: #000000a9;
+    background-color: rgb(230, 230, 230);
+    
+}
+
+.dia5:hover{
+    background-color: rgb(230, 230, 230);
+}
+
+.dia5:hover ~ .hijo:nth-of-type(7n+6){
+    color: #000000a9;
+    background-color: rgb(230, 230, 230);
+    
+}
+
+.dia6:hover{
+    background-color: rgb(230, 230, 230);
+}
+
+.dia6:hover ~ .hijo:nth-of-type(7n+7){
+    color: #000000a9;
+    background-color: rgb(230, 230, 230);
+    
+}
+
+.dia7:hover{
+    background-color: rgb(230, 230, 230);
+}
+
+.dia7:hover ~ .hijo:nth-of-type(7n+8){
+    color: #000000a9;
+    background-color: rgb(230, 230, 230);
+    
+}
