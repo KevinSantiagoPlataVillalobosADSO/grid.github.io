@@ -1,0 +1,97 @@
+body{
+    margin: 0;
+    padding: 0;
+    color: black;
+}
+
+.container{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: flex-end;
+    align-content: center;
+    flex-wrap: wrap;
+}
+
+.grid-container{
+    
+    height: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1100px;
+    grid-template-rows: 1fr;
+    justify-content: flex-end;
+    gap: 50px;
+}
+
+.grid-item{
+    grid-column: 1/2;
+    grid-row: 1/2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.grid-title{
+    justify-self: flex-start;
+    font-size: 40px;
+    margin: 10px 0;
+}
+
+.grid-form{
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+}
+
+.line{
+    width: 100px;
+    height: 5px;
+    background-color: #5050f0;
+}
+
+
+.grid-input{
+    width: 550px;
+    height: 30px;
+    padding: 10px;
+    margin: 10px 0;
+    border: black solid 1px;
+    border-radius: 3px;
+}
+
+.grid-message{
+    width: 550px;
+    height: 100px;
+    padding: 10px;
+    margin: 10px 0;
+    border: black solid 1px;
+    border-radius: 5px;
+    resize: none;
+}
+
+.grid-button{
+    color: white;
+    background-color: #5050f0;
+    width: 200px;
+    height: 50px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.grid-img{
+    background-image: url(fondo.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    grid-column: 2/3;
+    grid-row: 1/2;
+}
+
+.grid-img2{
+    background-image: url(illustration.svg);
+    grid-column: 2/3;
+    grid-row: 1/2;
+    background-repeat: no-repeat;
+    background-position: 0;
+}
